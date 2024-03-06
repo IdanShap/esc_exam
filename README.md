@@ -11,7 +11,7 @@ A customer opened the following ticket - What is the MOST likely cause for the i
 Hello Support,
 We have configured Identity Broker according to the Admin guide between 2 of our GWs.
 The GWs are managed by different Management servers.
-On the publisher GW, the user matches Identity based rules, but on the publisher GW the user does not match Identity based rules.
+On the publisher GW, the user matches Identity based rules, but on the subscriber GW the user does not match Identity based rules.
 Below you will found the broker config from our publisher and subscriber:
 
 The publisher:
