@@ -118,7 +118,8 @@ A customer have opened the following ticket, assist him to achieve his goal - yo
 
 Hello Support,
 We have created the following rule, but it is not working.
-![[Pasted image 20240325104416.png]]
+![caw-image](https://github.com/IdanShap/esc_exam/assets/112121953/430e66bd-b887-40e2-b9c3-4ff10320ce3e)
+
 Why is not working?
 
 #### Question 2:
