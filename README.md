@@ -1,10 +1,12 @@
 
 ### Instructions:
-Each of the 4 questions below, simulate an IDA ticket first response.
+Each of the  questions below, simulate a ticket first response.
 All the questions below can be solved by the provided information - without the need to ask the customer for more information / files.
 Your answers to these questions must be in a format of an email to the customer.
 You must explain the solution, like you would explain it to a customer.
 
+
+# IDA section:
 #### **Question 1:** 
 A customer opened the following ticket - What is the MOST likely cause for the issue? (configuration wise) - you must provide a solution in your first email.
 
@@ -81,6 +83,75 @@ We have a MUHv2 agent installed on Windows Server 2019.
 When we add a windows firewall rule, to allow traffic of specific AD group to our Microsoft-SQL server, the users are not getting access.
 But when we uninstall the MUHv2 agent, the users get access to the server, without any change being made to the windows firewall rule.
 Why is this happening?
+
+
+# TP section:
+
+
+
+# DLP section:
+
+#### Question 1:
+A customer opened the following ticket - in your response, take in consideration known issues (03/2024)
+
+Hello support,
+We have identified that some of our workers uploading C++ source code to Google Drive.
+We can block downloads completely to Google Drive using content awareness, however this is not our desired goal.
+We only want to restrict uploads of source code to Google Drive, but allow anything else.
+How can it be performed.
+
+
+#### Question 2:
+A customer have opened the following ticket, assist him to achieve his goal - you must provide a solution in your first email.
+
+Hello Support,
+We want to create a DLP rule that will be applied to all files transfers from inside to outside of our organization.
+The rule's purpose is to block files of the following types .pdg/.docx./.pptx/.clx/.txt/.js/.py/.xml/.jason
+But only if they contain sensitive information.
+How can we do that? and how can we define our own patterns?
+
+
+# Content Awareness section:
+
+#### Question 1:
+A customer have opened the following ticket, assist him to achieve his goal - you must provide a solution in your first email.
+
+Hello Support,
+We have created the following rule, but it is not working.
+![[Pasted image 20240325104416.png]]
+Why is not working?
+
+#### Question 2:
+A customer have opened the following ticket, assist him to achieve his goal - you must provide a solution in your first email.
+
+Hello support,
+We have identified that a Microsoft service is trying to download a .cab file in order to update our Office Suite on client machines.
+This is currently blocked by our rule-base.
+We would like to allow downloads of ONLY .cab files , and ONLY  from the specific destination https://some-microsoft-service
+How can we do it with content awareness?
+# Maestro section:
+
+
+
+# Performance section:
+
+#### Question 1:
+A customer have opened the following ticket, assist him to achieve his goal - you must provide a solution in your first email.
+
+Hello support,
+We are facing High CPU utilization by the RAD process on our cluster.
+Several times in a day, we see this high CPU happening, and then it decreases over time.
+During the issue, we can see some errors/warnings in logs of Anti-Virus regarding RAD unresponsiveness.
+What can be the cause for that? How can we mitigate it? 
+
+
+
+# QoS section:
+
+
+
+# PTC section:
+
 
 
 
