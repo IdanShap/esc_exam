@@ -131,7 +131,38 @@ This is currently blocked by our rule-base.
 We would like to allow downloads of ONLY .cab files , and ONLY  from the specific destination https://some-microsoft-service
 How can we do it with content awareness?
 # Maestro section:
+#### Question 1:
+Hello Support,
 
+I have a Maestro Security Group with 2 SGMs.
+We have the following enabled_blades: fw SSLinsp urlf av ab ips
+When running "asg monitor" we see that the second SGM's state is down
+The PNOTE in "cphaprob state" says only AMW
+When we run "asg_policy verify_amw -a" we can see:
+- On SGM 1 - the TP policy name and hash - and status installed
+- On SGM 2 - "Disabled"
+  
+No matter how many times we install the policy, it is not fixed.
+
+When doing fetchlocal, we see the following errors:
+```
+Installing Threat Prevention policy from local
+boolean_cpt malware_tp_conf_reload(const char*, char*, int): Reload(/opt/CPsuite-R81.20/fw1/state/local/AMW) failed ()
+127.0.0.1:12872/global_policy/is_ab_installed rc=4
+malware_tps_get_active_blades: tpConfClient->GetGlobalPolicySetting() failed
+malware_tps_reload: malware_tps_get_active_blades() failed
+boolean_cpt malware_tp_conf_reload(const char*, char*, int): malware_tps_reload() failed
+malware_load: malware_tp_conf_reload( dir=/opt/CPsuite-R81.20/fw1/state/local/AMW ) failed
+```
+
+When we look at the policies folder on SGM 2 we see this:
+```
+ls -lah /opt/CPsuite-R81.20/fw1/state/__tmp/
+lrwxrwxrwx 1 admin root 51 Apr 18 05:26 AMW -> /mnt/fcd/var/opt/CPsuite-R81.20/fw1/state/local/AMW
+lrwxrwxrwx 1 admin root 39 Apr 18 05:44 FW1 -> /opt/CPsuite-R81.20/fw1/state/local/FW1
+```
+
+Please help us to resolve the PNOTE so the member will be able to become Active and not Down
 
 
 # Performance section:
